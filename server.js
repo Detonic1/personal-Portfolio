@@ -171,9 +171,9 @@ app.post('/submit-data', (req, res) => {
             </head>
             <body>
                 <div class="navbar">
-                    <a href="#">Resume</a>
-                    <a href="#">Project</a>
-                    <a href="#">About</a>
+                    <a href="Resume">Resume</a>
+                    <a href="Project">Project</a>
+                    <a href="About">About</a>
                 </div>
                 <div class="user-container">
                     <img class="user-image" src="${userInfo.image}" alt="User Image">

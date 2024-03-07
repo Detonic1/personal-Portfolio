@@ -1,0 +1,65 @@
+
+
+h1{
+    color: whitesmoke;
+margin: -12px;
+height: 4.5rem;
+background: linear-gradient(29.93deg, #42496f, rgba(66, 73, 111, 0) 37.51%),
+            linear-gradient(186.09deg, #434f6c, rgba(67, 79, 108, 0) 39.79%),
+            linear-gradient(235.04deg, #45637b 1.66%, rgba(69, 99, 123, 0) 52.55%),
+            linear-gradient(71.3deg, #725648 6.08%, rgba(114, 86, 72, 0) 81.88%),
+            linear-gradient(161.8deg, #795e65 5.13%, rgba(121, 94, 101, 0) 23.4%),
+            linear-gradient(293.67deg, #7f5e64 10.87%, rgba(126, 94, 98, 0) 83.24%),
+            linear-gradient(0deg, #fff, #fff),
+            linear-gradient(0deg, hsla(0, 0%, 100%, .05), hsla(0, 0%, 100%, .05));
+padding: 3px;
+width: 100%;
+
+}
+  
+input{
+    border: 1px solid #dee3ee;
+    border-radius: 4px;
+    width: 28%;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+.alvin{
+        background-color: #f8f9fa;
+        border: 1px solid #e7e7e7;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #eee;
+        margin: 50px auto;
+        margin-left:70px ;
+        max-width: 500px;
+        padding: 50px;
+      
+            
+      
+       
+    }
+
+/* button:hover{
+    background-color: #fe4a5a ;
+  
+}
+
+  
+  button {
+    height: 28px;
+    width: 16%;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #e22222;
+    outline: none;
+    color: #020929;
+    margin: 10px;
+  } */
+
+

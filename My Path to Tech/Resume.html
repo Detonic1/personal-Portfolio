@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"
+  />
+    <link rel="stylesheet" href="./Resume.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Form</title>
+</head>
+<body>
+    <h1>Resume Builder</h1>
+
+    <div class="display">
+    <div id="personalDetailsPage">
+        <div class="alvin">
+        <h2>Personal Details</h2>
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Last Name:</label>
+        
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="phoneNumber">Phone Number:</label><br>
+        <input type="text" id="phoneNumber" name="phoneNumber">
+
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle"><br>
+
+        <label for="emailAddress">Email Address:</label><br>
+        <input type="email" id="emailAddress" name="emailAddress">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city">
+
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" name="zipCode"><br>
+
+        <label for="state">State/Province:</label><br>
+        <input type="text" id="state" name="state">
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br>
+         <div>
+        <button onclick="goToNextPage('objectivePage')">Next</button>
+        </div>
+    </div>
+    </div>
+   
+    <div id="objectivePage" style="display: none;">
+        
+        <div class="alvin">
+            
+            <h2>Objective</h2>
+            <div class="options">
+              <!-- Text Format -->
+              <button id="bold" class="option-button format">
+                <i class="fa-solid fa-bold"></i>
+              </button></i>
+              </button>
+              <button id="subscript" class="option-button script">
+                <i class="fa-solid fa-subscript"></i>
+              </button>
+      
+              <!-- List -->
+              <button id="insertOrderedList" class="option-button">
+                <div class="fa-solid fa-list-ol"></div>
+              </button>
+              <button id="insertUnorderedList" class="option-button">
+                <i class="fa-solid fa-list"></i>
+              </button>
+      
+              <!-- Undo/Redo -->
+              <button id="undo" class="option-button">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+              <button id="redo" class="option-button">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+      
+              <!-- Link -->
+              <button id="createLink" class="adv-option-button">
+                <i class="fa fa-link"></i>
+              </button>
+              <button id="unlink" class="option-button">
+                <i class="fa fa-unlink"></i>
+              </button>
+      
+              <!-- Alignment -->
+              <button id="justifyLeft" class="option-button align">
+                <i class="fa-solid fa-align-left"></i>
+              </button>
+              <button id="justifyCenter" class="option-button align">
+                <i class="fa-solid fa-align-center"></i>
+              </button>
+              <button id="justifyRight" class="option-button align">
+                <i class="fa-solid fa-align-right"></i>
+              </button>
+              <button id="justifyFull" class="option-button align">
+                <i class="fa-solid fa-align-justify"></i>
+              </button>
+              <button id="indent" class="option-button spacing">
+                <i class="fa-solid fa-indent"></i>
+              </button>
+              <button id="outdent" class="option-button spacing">
+                <i class="fa-solid fa-outdent"></i>
+              </button>
+      
+              <!-- Headings -->
+              <select id="formatBlock" class="adv-option-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+              </select>
+      
+              <!-- Font -->
+              <select id="fontName" class="adv-option-button"></select>
+              <select id="fontSize" class="adv-option-button"></select>
+      
+              <!-- Color -->
+              <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button" />
+                <label for="foreColor">Font Color</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-option-button" />
+                <label for="backColor">Highlight Color</label>
+              </div>
+            </div>
+            <div id="text-input" contenteditable="true"></div>
+            <button onclick="goToPreviousPage('personalDetailsPage')">Previous</button>
+            <button onclick="goToNextPage('educationPage')">Next</button>
+          </div>
+        
+    </div>
+    
+    <div id="educationPage" style="display: none;">
+
+        <div class="alvin1">
+            
+        <h2>Education</h2>
+       
+        <label for="firstName">School Name:</label><br>
+        <input type="text" id="School Name" name="School Name">
+
+        <label for="lastName">School Location:</label>
+        <input type="text" id="School Location" name="School Location"><br>
+
+        <label for="Start Date">Start Date:</label><br>
+        <input type="text" id="Start Date" name="Start Date">
+
+        <label for="jobTitle">End Date:</label>
+        <input type="text" id="End Date" name="End Date"><br>
+
+        <label for="emailAddress">I currently study here:</label><br>
+        <input type="email" id="I currently study here" name="I currently study here"><br>
+ 
+        <label for="Description">Description:</label><br>
+        <div class="container">
+            <div class="options">
+              <!-- Text Format -->
+              <button id="bold" class="option-button format">
+                <i class="fa-solid fa-bold"></i>
+              </button></i>
+              </button>
+              <button id="subscript" class="option-button script">
+                <i class="fa-solid fa-subscript"></i>
+              </button>
+      
+              <!-- List -->
+              <button id="insertOrderedList" class="option-button">
+                <div class="fa-solid fa-list-ol"></div>
+              </button>
+              <button id="insertUnorderedList" class="option-button">
+                <i class="fa-solid fa-list"></i>
+              </button>
+      
+              <!-- Undo/Redo -->
+              <button id="undo" class="option-button">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+              <button id="redo" class="option-button">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+      
+              <!-- Link -->
+              <button id="createLink" class="adv-option-button">
+                <i class="fa fa-link"></i>
+              </button>
+              <button id="unlink" class="option-button">
+                <i class="fa fa-unlink"></i>
+              </button>
+      
+              <!-- Alignment -->
+              <button id="justifyLeft" class="option-button align">
+                <i class="fa-solid fa-align-left"></i>
+              </button>
+              <button id="justifyCenter" class="option-button align">
+                <i class="fa-solid fa-align-center"></i>
+              </button>
+              <button id="justifyRight" class="option-button align">
+                <i class="fa-solid fa-align-right"></i>
+              </button>
+              <button id="justifyFull" class="option-button align">
+                <i class="fa-solid fa-align-justify"></i>
+              </button>
+              <button id="indent" class="option-button spacing">
+                <i class="fa-solid fa-indent"></i>
+              </button>
+              <button id="outdent" class="option-button spacing">
+                <i class="fa-solid fa-outdent"></i>
+              </button>
+      
+              <!-- Headings -->
+              <select id="formatBlock" class="adv-option-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+              </select>
+      
+              <!-- Font -->
+              <select id="fontName" class="adv-option-button"></select>
+              <select id="fontSize" class="adv-option-button"></select>
+      
+              <!-- Color -->
+              <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button" />
+                <label for="foreColor">Font Color</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-option-button" />
+                <label for="backColor">Highlight Color</label>
+              </div>
+            </div>
+            <div id="text-input" contenteditable="true"></div>
+          </div>
+        <button onclick="goToPreviousPage('objectivePage')">Previous</button>
+        <button onclick="goToNextPage('skillsAbilitiesPage')">Next</button>
+    </div>
+
+    <div id="skillsAbilitiesPage" style="display: none;">
+        <h2>Skills & Abilities</h2>
+        <div id="skillsAbilitiesContainer">
+            <input type="text" id="skills1" name="Skills & Abilities"><br>
+            <input type="text" id="skills2" name="Skills & Abilities">
+        </div>
+        <button onclick="goToPreviousPage('educationPage')">Previous</button>
+        <button onclick="goToNextPage('leadershipPage')">Next</button>
+    </div>
+    <div id="leadershipPage" style="display: none;">
+        <h2>Leadership</h2>
+        <div id="leadershipContainer">
+            <input type="text" id="leader" name="Skills & Abilities">
+        </div>
+        <button onclick="addMore('leadershipContainer')">Add More</button>
+        <button onclick="goToPreviousPage('skillsAbilitiesPage')">Previous</button>
+        <button onclick="goToNextPage('experiencePage')">Next</button>
+    </div>
+
+    <div id="experiencePage" style="display: none;">
+        <h2>Experience</h2>
+        <div id="experienceContainer">
+            <input type="text" id="Experiences" name="Skills & Abilities"><br>
+            <input type="text" id="Email" name="Skills & Abilities"><br>
+            <input type="text" id="Skills" name="Skills & Abilities"><br>
+            <input type="text" id="Abilities" name="Skills & Abilities">
+        </div>
+        <button onclick="addMore('experienceContainer')">Add More</button>
+        <button onclick="goToPreviousPage('leadershipPage')">Previous</button>
+        <button onclick="goToNextPage('workExperiencePage')">Next</button>
+    </div>
+
+    <div id="workExperiencePage" style="display: none;">
+        <h2>Work Experience</h2>
+        <div id="workExperienceContainer">
+            <label for="firstName">Position Title:</label><br>
+        <input type="text" id="School Name" name="School Name">
+
+        <label for="lastName">Company Name:</label>
+        <input type="text" id="School Location" name="School Location"><br>
+
+        <label for="Start Date">Start Date:</label><br>
+        <input type="text" id="Start Date" name="Start Date">
+
+        <label for="jobTitle">End Date:</label>
+        <input type="text" id="End Date" name="End Date"><br>
+
+        <label for="emailAddress">I currently study here:</label><br>
+        <input type="email" id="I currently study here" name="I currently study here"><br>
+ 
+        <label for="Description">Description:</label><br>
+        <div class="container">
+            <div class="options">
+              <!-- Text Format -->
+              <button id="bold" class="option-button format">
+                <i class="fa-solid fa-bold"></i>
+              </button></i>
+              </button>
+              <button id="subscript" class="option-button script">
+                <i class="fa-solid fa-subscript"></i>
+              </button>
+      
+              <!-- List -->
+              <button id="insertOrderedList" class="option-button">
+                <div class="fa-solid fa-list-ol"></div>
+              </button>
+              <button id="insertUnorderedList" class="option-button">
+                <i class="fa-solid fa-list"></i>
+              </button>
+      
+              <!-- Undo/Redo -->
+              <button id="undo" class="option-button">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+              <button id="redo" class="option-button">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+      
+              <!-- Link -->
+              <button id="createLink" class="adv-option-button">
+                <i class="fa fa-link"></i>
+              </button>
+              <button id="unlink" class="option-button">
+                <i class="fa fa-unlink"></i>
+              </button>
+      
+              <!-- Alignment -->
+              <button id="justifyLeft" class="option-button align">
+                <i class="fa-solid fa-align-left"></i>
+              </button>
+              <button id="justifyCenter" class="option-button align">
+                <i class="fa-solid fa-align-center"></i>
+              </button>
+              <button id="justifyRight" class="option-button align">
+                <i class="fa-solid fa-align-right"></i>
+              </button>
+              <button id="justifyFull" class="option-button align">
+                <i class="fa-solid fa-align-justify"></i>
+              </button>
+              <button id="indent" class="option-button spacing">
+                <i class="fa-solid fa-indent"></i>
+              </button>
+              <button id="outdent" class="option-button spacing">
+                <i class="fa-solid fa-outdent"></i>
+              </button>
+      
+              <!-- Headings -->
+              <select id="formatBlock" class="adv-option-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+              </select>
+      
+              <!-- Font -->
+              <select id="fontName" class="adv-option-button"></select>
+              <select id="fontSize" class="adv-option-button"></select>
+      
+              <!-- Color -->
+              <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button" />
+                <label for="foreColor">Font Color</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-option-button" />
+                <label for="backColor">Highlight Color</label>
+              </div>
+            </div>
+            <div id="text-input" contenteditable="true"></div>
+          </div>
+        
+        </div>
+        <button onclick="addMore('workExperienceContainer')">Add More</button>
+        <button onclick="goToPreviousPage('experiencePage')">Previous</button>
+        <button onclick="goToNextPage('communicationPage')">Next</button>
+    </div>
+
+    <div id="communicationPage" style="display: none;">
+        <h2>Communication/Languages</h2>
+        <div id="communicationLanguagesContainer">
+            <input type="text" id="Communication" name="Skills & Abilities"><br>
+            <input type="text" id="communicationContainer" name="Skills & Abilities"><br>
+            <input type="text" id="called" name="Skills & Abilities"><br>
+            <input type="text" id="skillsAbilitiesContainer" name="Skills & Abilities">
+        </div>
+        <button onclick="addMore('communicationLanguagesContainer')">Add More</button>
+        <button onclick="goToPreviousPage('workExperiencePage')">Previous</button>
+      
+    </div>
+    </div>
+    </div>
+
+    <script>
+        function goToNextPage(pageId) {
+            document.getElementById('personalDetailsPage').style.display = 'none';
+            document.getElementById('objectivePage').style.display = 'none';
+            document.getElementById('educationPage').style.display = 'none';
+            document.getElementById('skillsAbilitiesPage').style.display = 'none';
+            document.getElementById('leadershipPage').style.display = 'none';
+            document.getElementById('experiencePage').style.display = 'none';
+            document.getElementById('workExperiencePage').style.display = 'none';
+            document.getElementById('communicationPage').style.display = 'none';
+
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        function goToPreviousPage(pageId) {
+            document.getElementById('objectivePage').style.display = 'none';
+            document.getElementById('educationPage').style.display = 'none';
+            document.getElementById('skillsAbilitiesPage').style.display = 'none';
+            document.getElementById('leadershipPage').style.display = 'none';
+            document.getElementById('experiencePage').style.display = 'none';
+            document.getElementById('workExperiencePage').style.display = 'none';
+            document.getElementById('communicationPage').style.display = 'none';
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
